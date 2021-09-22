@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Parcial</title>
+
+        <link href="css.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    </head>
+
+    <body class="container " style="background-color: #E6E6E6;"  >
+
+            <div class="row justify-content-md-center" style="margin-top: 5%; margin-bottom:10%;">
+            <center>
+
+                <p class="titleWeb" style="font-size:0.8cm"><b>Web</b>Developer</p>
+
+            </center>
+            <form class="col-md-4 justify-items:center justify-content:center" id="formulario" style="background-color: white; margin-top: 0.5cm; border: solid gray;" method="GET" action="resultado.html">
+
+                <div style="margin:0.5cm; color:#6e6e6e" >
+                    <center>
+                        <label for="formulario">formulario de afiliación</label>
+                    </center>
+                    <div class="input-group d-flex mb-3" style="top:0.5cm">
+                            <input type="text" class="form-control order-2" name="nombre" id="nombre" placeholder="Nombre completo">
+                            <span class="input-group-text order-2"><i class="fas fa-user"></i></span>
+                            <span class="focus-border"><i></i></span>
+                            <div class="invalid-feedback order-3"></div>
+                        </div>
+                        <div class="input-group d-flex mb-3 "style="top:0.5cm">
+                                <input type="email" class="form-control order-2" name="email" id="email" placeholder="Email">
+                                <span class="input-group-text order-2"><i class="fas fa-envelope"></i></span>
+                                <span class="focus-border"><i></i></span>
+                                <div class="invalid-feedback order-3"></div>
+                            </div>
+
+                            <div class="input-group d-flex  mb-3" style="top:0.5cm">
+                                     <input type="phone" class="form-control order-2"  id="telefono" >
+                                     <span class="input-group-text order-2"><i class="fas fa-phone"></i></span>
+                                     <span class="focus-border"><i></i></span>
+                                     <div class="invalid-feedback order-3"></div>
+                                 </div>
+
+                <div class="input-group mb-3" style="top:0.5cm">
+                    <input type="text" class="form-control" id ="gusto"  >
+                    <button class="btn btn-outline-success" type="button" id="button-addon2" onclick = "editar()">Gustos</button>
+                </div>
+
+                <div class = "row"  >
+                    <div class = "col-md-12" >
+                        <table class = "table table-bordered" style="top:0.5cm" >
+                        <th>
+                        <button type="button" class="btn btn-success" style="background-color: #26a844"  >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1cm" height="1cm" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
+                            <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"></path>
+                            </svg>
+                        </button>
+                        </th>
+                    </div>
+                    <th>
+                    <div class = "col-md-12">
+                    <table class="table table-bordered">
+                        <tbody id="tablaprincipal">
+                            <td  >
+                                Gusto
+                            </td>
+                            <td>
+                                %
+                            </td>
+                            <td id = "editar">
+                                Edit
+                            </td>
+                         </tbody>
+                        </table>
+                    </div>
+            </table>
+
+            </div>
+        <a href="https://sites.google.com/view/dweb1-uis" class="link">Ir a Site de P web</a>
+
+        <div id="formulario1"></div>
+        </form>
+        </div>
+        <script src="parcial1.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </body>
+
+</html>
